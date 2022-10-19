@@ -1,0 +1,192 @@
+.aboutUs_container {
+  position: relative;
+  /* top: 90%;*/
+  /* left: 5%;  */
+  /* transform: translate(50%, 50%); */
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 3.0px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px; */
+  /* background: red; */
+  /* width: 90%; */
+  /* margin-bottom: 40px; */
+  background: linear-gradient(-45deg, #762dff, #bc19c2, #c021a3);
+  z-index: 1;
+  /* height: auto; */
+  /* overflow-y: hidden; */
+  padding: 10rem 0;
+  width: 100vw;
+  animation: gradient 5s ease infinite;
+}
+
+.card_blob {
+  position: relative;
+  /* height: auto; */
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+
+.aboutUs-card_blob {
+  position: absolute;
+  color: #0a9e81;
+  height: 20rem;
+  top: 3rem;
+  top: 5rem;
+  left: -4rem;
+  z-index: -2;
+  opacity: .7;
+}
+
+.card_container {
+  display: inline-block;
+  width: 320px;
+  height: 150px;
+  z-index: 5;
+  margin: 50px;
+  margin-bottom: 70px;
+}
+
+.wmn_dets {
+  font-size: 12px;
+}
+
+.card_top {
+  background-color: #fff;
+  transform: translateY(40px);
+  transition: transform 0.4s cubic-bezier(0.5, 1, 0.89, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 5;
+}
+
+.card_heading {
+  text-align: center;
+  font-size: 25px;
+}
+
+.dep_name {
+  background: linear-gradient(
+    90deg,
+    #4ab3e7d7,
+    #2b5bdfd5,
+    #40b48fc9,
+    #22d1ecd1
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 15px;
+  margin-bottom: 10;
+}
+
+.dep_image {
+  display: flex;
+  justify-content: center;
+}
+
+.dep_image img {
+  height: 100px;
+  margin-top: 15px;
+  transform: translateY(10px);
+  transition: transform 0.4s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.card_bottom {
+  background: linear-gradient(-45deg, #762dff, #c332c8, #c021a3);
+  height: 140px;
+  width: 320px;
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transform: translateY(-4rem);
+  z-index: -1;
+  transition: transform 0.4s cubic-bezier(0.5, 1, 0.89, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* padding: 0rem .5rem; */
+}
+
+.card_container:hover .card_bottom,
+.card_container:hover .dep_image img {
+  transform: translateY(0px);
+}
+
+/* .card_container:hover .card_bottom {
+    width: 360px;
+    /* height: ; */
+/* } */
+
+.card_container:hover .card_top {
+  transform: translateY(20px);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dep_details-container {
+  transform: translateY(40px);
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.card4_container .dep_details-container {
+  transform: translateY(20px);
+}
+
+.details_btn {
+  position: absolute;
+  right: 10%;
+  bottom: 8%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 6px 20px;
+}
+
+.details_btn a {
+  background: linear-gradient(
+    90deg,
+    #4ab3e7d7,
+    #2b5bdfd5,
+    #40b48fc9,
+    #22d1ecd1
+  );
+  -webkit-background-clip: text;
+  /* padding: 20px 22px; */
+  color: transparent;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* .card_heading p {
+  color: red;
+} */
+/* 
+@supports (background-clip: text) {
+  .dep_name  {
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    background-clip: text;
+    color: transparent;
+  }
+} */
+
+/* KEYFRAME ANIMATIONS */
+
+/* @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } } */
+
+.fadeInTop_animation {
+  animation: fadeInTop 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

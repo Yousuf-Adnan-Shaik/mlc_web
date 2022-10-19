@@ -1,0 +1,199 @@
+
+.projects_section {
+    background-image: url(/images/projects_heading.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150%;
+}
+
+.carousel_container {
+    /* background-color: red; */
+    width: 1300px;
+    height: 80vh;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 4px rgba(192, 189, 189, 0.592);
+    overflow: hidden;
+}
+/* 
+.carousel_card {
+    width: 100%;
+} */
+
+.carousel_card {
+    position: absolute;
+    top: 0;
+    width: 1250px;
+    /* left: 5%; */
+    height: 80vh;
+    
+    display: flex;
+    /* justify-content: space-eve; */
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(
+    135deg,
+    #4ab3e7d7,
+    #2b5bdfd5,
+    #4044b4c9,
+    #5822ecd1
+  ); */
+  transition: transform .5s;
+}
+
+.prj_image img{
+    position: absolute;
+    height: 350px;
+    margin: 60px;
+    border-radius: 5px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    #4ab3e7d7 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    #822bdfd5 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    #cf2dcfc9 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    #22d1ecd1 40px -40px;
+    transition: .5s ease;
+    top : 110px;
+    left: 30px;
+    /* transform: translateY(60px); */
+}
+
+.prj_image:hover img{
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 20px -20px 0px -3px,
+    #4ab3e7d7 25px -25px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    #822bdfd5 45px -45px, rgb(255, 255, 255) 55px -55px 0px -3px,
+    #cf2dcfc9 60px -60px, rgb(255, 255, 255) 70px -70px 0px -3px,
+    #22d1ecd1 75px -75px;
+    transform: translate(-15px, 15px);
+    
+}
+
+.project_heading {
+    text-transform: uppercase;
+    border-bottom: 3px solid #4ab3e7;
+    border-top: 3px solid #4ab3e7;
+    background: linear-gradient(
+    -90deg,
+    #4ab3e7,
+    #2b5bdf,
+    #40b48f,
+    #22d1ec
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  font-size: 40px;
+  top: -250px;
+  left: 38%;
+  /* background-color: white; */
+}
+
+.project_heading h3{    
+  width: max-content;
+
+}
+
+.project_description {
+    position: relative;
+    max-height: 330px;
+    background: linear-gradient(
+    135deg,
+    #4ab3e7d7,
+    #2b5bdfd5,
+    #4044b4c9,
+    #5822ecd1
+  );
+    color: #fff;
+    padding: 30px;
+    /* padding-bottom: 30px !important; */
+    left: 290px;
+    top: 10px;
+    border-radius: 5px;
+}
+
+.project_description p {
+    width: 430px;
+}
+
+.project_description p span{
+    font-size: 50px;
+}
+
+.project_team_coantienr {
+    position: relative;
+    top: 230px;
+    left: -220px;
+    display: flex;
+}
+
+.prj_team {
+    font-size: 25px;
+    width: max-content;background: linear-gradient(
+    -90deg,
+    #4ab3e7,
+    #2b5bdf,
+    #40b48f,
+    #22d1ec
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: 10px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  border-bottom: 4px dashed #40b48f;
+}
+
+
+.prj_team_imgs {
+    display: flex;
+}
+
+.project_team_coantienr  img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.carousel1_btns {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    /* background-color: red; */
+    /* font-size: 25px; */
+    /* width: max-content; */
+    cursor: pointer;
+    z-index: 999;
+}
+
+.carousel1_btns img{
+    height: 66px;
+    padding: 20px 10px;
+    /* cursor: pointer; */
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.443);
+    border-radius: 8px;
+    background: linear-gradient(
+    135deg,
+    #4ab3e7d7,
+    #2b5bdfd5,
+    #4044b4c9,
+    #5822ecd1
+  );
+  color: #fff;
+}
+
+.slider_btn--right {
+    position: absolute;
+    right: 20px;
+}
+
+.slider_btn--left {
+    position: absolute;
+    left: 20px;
+}

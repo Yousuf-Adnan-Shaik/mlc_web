@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/aboutUs.css" />
+    <link rel="stylesheet" href="./CSS/navigation.css" />
+    <link rel="stylesheet" href="./CSS/animations.css" />
+    <link rel="stylesheet" href="./CSS/projects.css" />
+    <title>testing_noWebpack</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- CANVAS SECTION -->
+
+    <div class="canvas_section">
+      <header class="header">
+        <div class="logo">
+          <a href="#" class="logo_img"
+            ><img
+              src="/images/logo/Ml_logo_dark_2.png"
+              alt="MLC_logo"
+              class="logo_img"
+          /></a>
+        </div>
+      </header>
+      <section class="section homepage_section">
+        <h1 class="intro_text intro_text1">WELCOME TO</h1>
+        <span class="intro_span" data-text="MLC">MLC </span>
+        <div class="hr_line"></div>
+        <h1 class="intro_text intro_text2">
+          <span>MACHINE LEARNING CLUB</span>
+        </h1>
+        <button class="css-button-sliding-to-bottom--green explore_btn">
+          <a href="#" class="explore_btn"> Explore </a>
+        </button>
+      </section>
+      <canvas class="webgl"></canvas>
+    </div>
+
+    <!-- MAIN PAGE -->
+
+    <div class="main_page_section section_hidden">
+      <!-- <header class="header">
+        <div class="logo">
+          <a href="#" class="logo_img"
+            ><img
+              src="/images/logo/Ml_logo_dark_2.png"
+              alt="MLC_logo"
+              class="logo_img"
+          /></a>
+        </div>
+
+        <nav class="navigation">
+          <ul class="nav_items">
+            <li class="nav_item"></li>
+          </ul>
+        </nav>
+
+      </header> -->
+
+      <header class="header_navigation">
+        <div class="ml_logo">
+          <img
+            src="/images/logo/Ml_logo_dark_2.png"
+            class="mlc_logo_hp"
+            alt="MLC logo"
+          />
+        </div>
+        <div class="nav_bar">
+          <ul class="nav_items">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">research</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">team</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="aboutUs_container" id="section_aboutus">
+        <div class="aboutUs_heading section_heading">
+          <div class="section-heading_text">
+            <span
+              ><img
+                class="heading_blob"
+                src="/images/layered-waves-haikei.png"
+                alt="" /></span
+            >ABOUT US
+          </div>
+        </div>
+        <!-- <div class="moveAround_blob">
+          <img src="/images/about_us/svgs/Float_blob2.svg" alt="" class="move_around_blob" style="z-index: 999; height: 100px; position:absolute;">
+        </div> -->
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card1_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">ML_PROJECTS</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Ml_projects.svg"
+                  alt="Ml_projects"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They work and manage the projects related to machine learning.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card2_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Research_team</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/Images/about_us/svgs/Research_Team.svg"
+                  alt="Projects team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They write research papers and some teach ML to the club
+                  members.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card3_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">DESIGN_team</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/Images/about_us/svgs/Design_team.svg"
+                  alt="Design team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They are here to manifest ideas, add magnificent details and
+                  bring out the most eye catchy output.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card4_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Ml_women</h3>
+              </div>
+              <div class="dep_image">
+                <img src="/Images/about_us/svgs/Ml_women.svg" alt="Ml Women" />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="wmn_dets dep_details">
+                  We machine learning club not only work for the technical
+                  stuff. But we also put efforts to change society by creating
+                  awareness regarding various social issues ....help many
+                  students to come out of mental and social issues.....ML women
+                  team Thing.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card5_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">website_developers</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Web_builders.svg"
+                  alt="Web devs"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  "Opportunities don't happen you crate them." Our
+                  website_developers work like manual tools who build the club's
+                  website
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card6_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">ML_quiz</h3>
+              </div>
+              <div class="dep_image">
+                <img src="/images/about_us/svgs/Ml_quiz.svg" alt="Ml Quiz" />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  "Opportunities don't happen you crate them." Our
+                  website_builders work like manual tools who build the club's
+                  website
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Instagram_team</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Instagram_team.svg"
+                  alt="Instagram Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">FUN_DEPARTMENT</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Fun_dep.svg"
+                  alt="Fun Department"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Event_management</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Event_mang.svg"
+                  alt="Management Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Content_department</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Content_team.svg"
+                  alt="Content Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Youtubr video makers</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/youtube_team.svg"
+                  alt="Youtube Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Marketing Department</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Ml_marketing.svg"
+                  alt="MArketing Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">outreach_department</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Outreach_team.svg"
+                  alt="outreach Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card_blob">
+          <img
+            class="aboutUs-card_blob"
+            src="/images/about_us/svgs/Float_blob2.svg"
+            alt="card_blob"
+          />
+          <div class="card_container card7_container">
+            <div class="card_top">
+              <div class="card_heading">
+                <h3 class="dep_name">Contest_idea_creators</h3>
+              </div>
+              <div class="dep_image">
+                <img
+                  src="/images/about_us/svgs/Content_idea.svg"
+                  alt="contest idea Team"
+                />
+              </div>
+            </div>
+            <div class="card_bottom">
+              <div class="dep_details-container">
+                <p class="dep_details">
+                  They manage the ML club Instagram and actively post content on
+                  it.
+                </p>
+              </div>
+              <div class="details_btn">
+                <a href="#" class="more_btn">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="projects_section section" id="section_projects">
+        <div class="aboutUs_heading section_heading">
+          <div class="section-heading_text">
+            <span
+              ><img
+                class="heading_blob"
+                src="/images/layered-waves-haikei.png"
+                alt="" /></span
+            >PROJECTS
+          </div>
+        </div>
+        <div class="carousel_container">
+          <button class="slider_btn--left carousel1_btns">
+            <img
+              src="/images/slider/images/arrow-bar-left.svg"
+              alt="left_arrow"
+            />
+          </button>
+          <button class="slider_btn--right carousel1_btns">
+            <img src="/images/slider/images/arrow-bar-right.svg" alt="" />
+          </button>
+          <div class="carousel_card carousel_card1">
+            <div class="prj_image">
+              <img
+                src="/images/slider/images/Project_walle.jpg"
+                alt="Project Read"
+              />
+            </div>
+            <div class="project_heading">
+              <h3>Project_wall-E</h3>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team:</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/Prj_team1/1.jpg" alt="" />
+                <img src="/images/slider/images/Prj_team1/2.jpg" alt="" />
+                <img src="/images/slider/images/Prj_team1/3.jpg" alt="" />
+                <img src="/images/slider/images/Prj_team1/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel_card carousel_card2"
+            style="transform: translateX(1300px)"
+          >
+            <div class="prj_image">
+              <img
+                src="/images/slider/images/Project_forgotName.jpg"
+                alt="Project Read"
+              />
+            </div>
+            <div class="project_heading">
+              <h3>Project_Forgotten</h3>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/prj_team2/1.jpg" alt="" />
+                <img src="/images/slider/images/prj_team2/2.jpg" alt="" />
+                <img src="/images/slider/images/prj_team2/3.jpg" alt="" />
+                <img src="/images/slider/images/prj_team2/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel_card carousel_card3"
+            style="transform: translateX(2500px)"
+          >
+            <div class="prj_image">
+              <img
+                src="/images/slider/images/Project_chickCatching.jpg"
+                alt=""
+              />
+            </div>
+            <div class="project_heading">
+              <p>Project_ChickCatcher</p>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team:</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/prj_team3/1.jpg" alt="" />
+                <img src="/images/slider/images/prj_team3/2.jpg" alt="" />
+                <img src="/images/slider/images/prj_team3/3.jpg" alt="" />
+                <img src="/images/slider/images/prj_team3/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel_card carousel_card4"
+            style="transform: translateX(3700px)"
+          >
+            <div class="prj_image">
+              <img src="/images/slider/images/Project_Read.jpg" alt="" />
+            </div>
+            <div class="project_heading">
+              <p>Project_Read</p>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team:</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/prj_team4/1.jpg" alt="" />
+                <img src="/images/slider/images/prj_team4/2.jpg" alt="" />
+                <img src="/images/slider/images/prj_team4/3.jpg" alt="" />
+                <img src="/images/slider/images/prj_team4/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="projects_section" id="section_research">
+        <div class="carousel_container">
+          <button class="slider_btn--left carousel1_btns">
+            <img src="/images/slider/images/arrow-bar-left.svg" alt="left_arrow" />
+          </button>
+          <button class="slider_btn--right carousel1_btns">
+            <img src="/images/slider/images/arrow-bar-right.svg" alt="" />
+          </button>
+          <div class="carousel_card carousel_card1">
+            <div class="prj_image">
+              <img src="/images/slider/images/Project_walle.jpg" alt="Project Read" />
+            </div>
+            <div class="project_heading">
+              <h3>Project_wall-E</h3>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team:</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/Prj_team1/1.jpg" alt="" />
+                <img src="/images/slider/images/Prj_team1/2.jpg" alt="" />
+                <img src="/images/slider/images/Prj_team1/3.jpg" alt="" />
+                <img src="/images/slider/images/Prj_team1/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel_card carousel_card2"
+            style="transform: translateX(1300px)"
+          >
+            <div class="prj_image">
+              <img src="/images/slider/images/Project_forgotName.jpg" alt="Project Read" />
+            </div>
+            <div class="project_heading">
+              <h3>Project_Forgotten</h3>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/prj_team2/1.jpg" alt="" />
+                <img src="/images/slider/images/prj_team2/2.jpg" alt="" />
+                <img src="/images/slider/images/prj_team2/3.jpg" alt="" />
+                <img src="/images/slider/images/prj_team2/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel_card carousel_card3"
+            style="transform: translateX(2500px)"
+          >
+            <div class="prj_image">
+              <img src="/images/slider/images/Project_chickCatching.jpg" alt="" />
+            </div>
+            <div class="project_heading">
+              <p>Project_ChickCatcher</p>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team:</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/prj_team3/1.jpg" alt="" />
+                <img src="/images/slider/images/prj_team3/2.jpg" alt="" />
+                <img src="/images/slider/images/prj_team3/3.jpg" alt="" />
+                <img src="/images/slider/images/prj_team3/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel_card carousel_card4"
+            style="transform: translateX(3700px)"
+          >
+            <div class="prj_image">
+              <img src="/images/slider/images/Project_Read.jpg" alt="" />
+            </div>
+            <div class="project_heading">
+              <p>Project_Read</p>
+            </div>
+            <div class="project_description">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                blanditiis itaque aliquam enim illum, cupiditate ipsam
+                voluptatum voluptas. Assumenda asperiores, quia porro corporis
+                totam deleniti recusandae sapiente provident minus dolorum!
+              </p>
+            </div>
+            <div class="project_team_coantienr">
+              <p class="prj_team">Project team:</p>
+              <div class="prj_team_imgs">
+                <img src="/images/slider/images/prj_team4/1.jpg" alt="" />
+                <img src="/images/slider/images/prj_team4/2.jpg" alt="" />
+                <img src="/images/slider/images/prj_team4/3.jpg" alt="" />
+                <img src="/images/slider/images/prj_team4/4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+    <script type="module" src="./js/threeJs.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/aboutUs.js"></script>
+    <!-- <script type="text/javascript" src="js/controls/OrbitControls.js"></script> -->
+  </body>
+</html>
